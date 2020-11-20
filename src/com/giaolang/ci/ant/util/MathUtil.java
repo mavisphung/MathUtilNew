@@ -23,10 +23,11 @@ public class MathUtil {
             return 1; //0! = 1! = 1
         
         //Sống sót đến đây, thì đã có n > 1 và n <= 20 rồi,  xài else trừ điểm
-        long result = 1;        
-        for (int i = 2; i <= n; i++)
-            result *= i;
-        
-        return result;
+//        long result = 1;        
+//        for (int i = 2; i <= n; i++)
+//            result *= i;
+//        
+//        return result;
+        return n * getFactorial(n - 1);
     }   //Phần nâng cao sẽ dùng đệ quy để hiện thực hóa quy trình Regression Test
 }
